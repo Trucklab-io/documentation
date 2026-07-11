@@ -1,0 +1,61 @@
+---
+title: "Workspace overview"
+description: "Understand the main Affretio areas and how operational data flows into planning."
+icon: "map"
+---
+
+Affretio organizes your transport operation into three connected layers: your
+workspace, operational resources, and planning.
+
+## Main areas
+
+| Area | What you manage |
+| --- | --- |
+| **Home** | A live summary of driver availability, fleet status, and client activity. |
+| **Dashboard** | Company details, workspace access, tariff grids, and operational indicators. |
+| **Clients** | The organizations you plan and price trips for. |
+| **Drivers** | Driver identity, contact details, truck type, availability, and mobile access. |
+| **Trucks** | Registration, type, assigned driver, status, purchase date, and odometer. |
+| **Planning** | Daily trips, driver and truck assignments, versions, printing, and PDF exports. |
+| **Planning history** | Previous planning versions and their review status. |
+| **Recurring trips** | Daily, weekly, or monthly trip templates. |
+
+## Recommended setup order
+
+<Steps>
+  <Step title="Complete your company profile">
+    Your own company is the operating organization for drivers, trucks, and workspace settings.
+  </Step>
+  <Step title="Add a client">
+    Planning is created for a client organization, so you need at least one client before planning trips.
+  </Step>
+  <Step title="Add drivers and trucks">
+    Create the resources you want to assign. A truck can remain unassigned until you know its regular driver.
+  </Step>
+  <Step title="Create and review a planning">
+    Build trips in a draft, submit the version, and have an Owner or Admin approve it.
+  </Step>
+</Steps>
+
+<Info>
+  Affretio always works inside the selected workspace. If your user can access
+  more than one workspace, verify the active workspace before making changes.
+</Info>
+
+## Resource relationships
+
+- Your company profile represents the transport company operating the workspace.
+- Drivers and trucks belong to that operation.
+- A driver may have an assigned truck and periods of unavailability.
+- A trip belongs to a client planning and can be assigned to a driver and truck.
+- Recurring trips create occurrences when you open the relevant planning date.
+- Approved planning versions become the active operational schedule.
+
+<CardGroup cols={2}>
+  <Card title="Initial setup" icon="list-check" href="/getting-started/initial-setup">
+    Prepare the minimum data required for planning.
+  </Card>
+  <Card title="Planning workflow" icon="code-branch" href="/concepts/planning-workflow">
+    Learn how drafts, reviews, and approved versions work.
+  </Card>
+</CardGroup>

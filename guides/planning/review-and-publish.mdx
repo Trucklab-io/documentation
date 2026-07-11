@@ -1,0 +1,83 @@
+---
+title: "Review and publish planning"
+description: "Submit, approve, reject, restore, and audit planning versions."
+icon: "check-double"
+---
+
+Planning versions protect the active schedule from unreviewed edits. Regular users
+can prepare and submit drafts. Owners and Admins can review and publish them.
+
+## Submit a draft
+
+<Steps>
+  <Step title="Open the correct planning">
+    In **Planning**, confirm the client and planning day.
+  </Step>
+  <Step title="Select the draft version">
+    Open **Actions** and use the version selector. A draft is shown with its version
+    number and `draft` status.
+  </Step>
+  <Step title="Complete the operational review">
+    Check assignments, driver availability, truck status, route addresses, times,
+    and trip statuses.
+  </Step>
+  <Step title="Submit the version">
+    Select **Soumettre**. The version moves from Draft to Submitted and appears in
+    the review queue for an Owner or Admin.
+  </Step>
+</Steps>
+
+<Warning>
+  A submitted version is not yet the active published planning.
+</Warning>
+
+## Approve a version
+
+You need the **Owner** or **Admin** role.
+
+1. Open the submitted planning from the review queue or **Planning history**.
+2. Confirm the client, period, and version number.
+3. Review the complete trip list.
+4. Open **Actions** and select **Approuver**.
+5. Confirm that the approved version is now the active planning.
+
+Approval publishes the version's entries into the active operational planning.
+
+## Reject a version
+
+If the planning needs correction, open **Actions** and select **Rejeter**. The
+rejected version stays in history. Create or continue with a new draft to make the
+required corrections, then submit it for another review.
+
+## Restore an earlier version
+
+Use restore when a previous approved snapshot should become the basis for new work.
+
+1. Open **Planning history** and find the approved version.
+2. Open the version in Planning.
+3. Open **Actions** and select **Restaurer**.
+4. Review the new version created from that snapshot.
+5. Submit and approve it through the normal workflow.
+
+<Note>
+  Restore creates another version. It does not rewrite or erase planning history.
+</Note>
+
+## Review statuses
+
+| Status | Meaning | Next action |
+| --- | --- | --- |
+| **Draft** | Editable work that is not published. | Finish checks and submit. |
+| **Submitted** | Waiting for Owner or Admin review. | Approve or reject. |
+| **Approved** | Published as an accepted planning version. | Operate it or restore it later. |
+| **Rejected** | Reviewed but not accepted. | Correct the planning in a new draft. |
+
+## Use Planning history
+
+Open **Planning history** to search by date, route, or client. Filter by client and
+status to audit the latest planning versions. The history view is the safest place
+to confirm whether work is still a draft or has been approved.
+
+<Card title="Planning workflow" icon="code-branch" href="/concepts/planning-workflow">
+  Understand the complete version lifecycle and ownership model.
+</Card>

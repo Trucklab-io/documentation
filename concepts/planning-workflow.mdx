@@ -1,0 +1,82 @@
+---
+title: "Planning workflow"
+description: "Understand how planning drafts become reviewed, active operational schedules."
+icon: "code-branch"
+---
+
+Every client planning keeps version history. This separates daily editing from the
+schedule the operation has accepted and published.
+
+## Version lifecycle
+
+```text
+Draft ──submit──> Submitted ──approve──> Approved and active
+                         └────reject───> Rejected
+
+Earlier approved version ──restore──> New version for review
+```
+
+## Draft
+
+A Draft is editable planning work. Creating, changing, assigning, moving, or deleting
+a trip happens in a draft version when the user does not have a direct-publish workflow.
+
+Use a draft to:
+
+- add and assign trips;
+- resolve driver or truck conflicts;
+- update route, time, load, price, and status;
+- verify the complete schedule before review.
+
+Draft work is not the published schedule.
+
+## Submitted
+
+Submission marks a version ready for review. The trip snapshot is preserved so an
+Owner or Admin can evaluate exactly what was proposed.
+
+Reviewers should verify:
+
+- the correct client and period;
+- every assignment and unassigned trip;
+- driver availability;
+- truck status;
+- route addresses and timing;
+- any manual price or unusual trip status.
+
+## Approved
+
+Approval accepts the version and publishes its entries into the active planning.
+The approved version remains in Planning history for audit and restore operations.
+
+Owners and Admins can approve planning.
+
+## Rejected
+
+Rejection records that a submitted snapshot was not accepted. Keep the rejected
+version for history, correct the operational data in a new draft, and submit again.
+
+## Restored
+
+Restore uses an earlier approved version as the starting point for another version.
+History remains intact. Review the restored content because resources, availability,
+and client requirements may have changed since the earlier approval.
+
+## Direct administrative changes
+
+Owners and Admins may have actions that update planning directly. Trucklab keeps
+version history aligned so the planning remains auditable.
+
+<Warning>
+  Always confirm the selected client, day, and version before using **Approuver**,
+  **Rejeter**, or **Restaurer**.
+</Warning>
+
+<CardGroup cols={2}>
+  <Card title="Create a planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
+    Prepare the trips and assignments in a draft.
+  </Card>
+  <Card title="Review and publish" icon="check-double" href="/guides/planning/review-and-publish">
+    Apply the workflow in the product.
+  </Card>
+</CardGroup>
