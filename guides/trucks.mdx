@@ -1,0 +1,69 @@
+---
+title: "Manage trucks"
+description: "Create fleet records, assign drivers, and keep vehicle status current."
+icon: "truck"
+---
+
+Truck records represent the vehicles dispatchers assign to trips. Each record has
+a registration, type, optional driver, operational status, and lifecycle details.
+
+## Before you begin
+
+Complete **Own company profile** on the Dashboard. Affretio disables **New truck**
+until your operating company exists.
+
+## Create a truck
+
+<Steps>
+  <Step title="Open Trucks">
+    Open **Home**, find Trucks, and select **Open details**.
+  </Step>
+  <Step title="Start a truck record">
+    Select **New truck**.
+  </Step>
+  <Step title="Enter the basics">
+    In **Basics**, enter the registration and choose the truck type.
+
+    Use a consistent registration format so dispatchers can find the vehicle quickly.
+  </Step>
+  <Step title="Set the assignment and status">
+    In **Assignment**, choose a driver or leave the truck **Unassigned**. Set its
+    current status to **Available**, **On route**, or **Maintenance**.
+  </Step>
+  <Step title="Add lifecycle details">
+    Enter the purchase date and odometer value when known.
+  </Step>
+  <Step title="Review and create">
+    Check **Basics**, **Assignment**, and **Technical details**, then create the truck.
+  </Step>
+</Steps>
+
+## Truck statuses
+
+| Status | Meaning | Planning guidance |
+| --- | --- | --- |
+| **Available** | Ready for operational assignment. | Assign normally. |
+| **On route** | Currently operating a trip. | Check timing before another assignment. |
+| **Maintenance** | Temporarily unavailable for operations. | Do not assign until maintenance is complete. |
+
+## Change the assigned driver
+
+Edit the truck, open **Assignment**, and choose another driver or **Unassigned**.
+This updates the vehicle record; review existing trips separately before changing
+operational planning.
+
+## Keep fleet data reliable
+
+- Update status when a truck enters or leaves maintenance.
+- Update the odometer using your team's agreed cadence.
+- Edit a registration correction instead of creating a duplicate truck.
+- Search by registration or driver before adding a new record.
+
+<Warning>
+  Before deleting a truck, check active and historical planning. Referenced fleet
+  records may be protected from deletion.
+</Warning>
+
+<Card title="Create a planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
+  Assign drivers and trucks to client trips.
+</Card>

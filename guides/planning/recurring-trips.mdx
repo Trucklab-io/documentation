@@ -1,0 +1,73 @@
+---
+title: "Create recurring trips"
+description: "Create daily, weekly, or monthly trip templates for repeated client routes."
+icon: "repeat"
+---
+
+Recurring trips reduce repeated data entry for regular routes. Affretio generates
+their planning occurrences when you open a matching client and date.
+
+## Before you begin
+
+- Create the client organization.
+- Add a driver if the recurring trip should have a default assignment.
+- Confirm the route, usual departure time, and recurrence pattern.
+
+## Create a recurring trip
+
+<Steps>
+  <Step title="Open Recurring trips">
+    Select **Recurring trips** in the main navigation, then select **New recurring trip**.
+  </Step>
+  <Step title="Configure the basics">
+    Choose the **Client organization** and an optional driver. Set the template to
+    **Active** to generate occurrences or **Paused** to keep it dormant.
+  </Step>
+  <Step title="Choose the schedule">
+    Select **Daily**, **Weekly**, or **Monthly**.
+
+    - For daily recurrence, include or exclude selected weekdays.
+    - For weekly recurrence, choose the potential planning days.
+    - For monthly recurrence, choose a day of the month.
+
+    Add start and end dates when the route has a defined operating period.
+  </Step>
+  <Step title="Enter the route">
+    Enter the departure time, optional duration, required departure and arrival
+    addresses, load, distance, and optional manual price.
+  </Step>
+  <Step title="Review the template">
+    Review **Basics**, **Schedule**, and **Route**. Select **I confirm the information
+    is correct**, then select **Create trip**.
+  </Step>
+</Steps>
+
+## Generate the planned occurrence
+
+Open **Planning**, select the same client, and open a date that matches the recurrence.
+Affretio creates the occurrence when the planning is loaded.
+
+<Note>
+  A recurring template and its generated planning trips are separate records.
+  Pausing a template prevents future generation but does not remove trips that already exist.
+</Note>
+
+## Pause or resume a template
+
+Use the row status control on **Recurring trips**:
+
+- **Active** templates can generate future occurrences.
+- **Paused** templates remain available but do not generate occurrences.
+
+Use bulk actions when several templates for the same operation need the same status change.
+
+## Avoid duplicate occurrences
+
+- Search existing templates by route, client, or driver before creating another.
+- Use one template for one stable recurrence pattern.
+- Edit or pause the existing template when the route changes.
+- Check the relevant planning after changing a recurrence.
+
+<Card title="Create and assign trips" icon="route" href="/guides/planning/create-a-plan">
+  Complete the daily planning generated from recurring templates.
+</Card>

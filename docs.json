@@ -1,34 +1,66 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Trucklab Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#D6A514",
+    "light": "#F2C94C",
+    "dark": "#9E7610"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Getting started",
+        "icon": "rocket",
         "pages": [
           "index",
-          "quickstart"
+          "getting-started/overview",
+          "getting-started/initial-setup",
+          "getting-started/invite-your-team"
+        ]
+      },
+      {
+        "group": "Manage your workspace",
+        "icon": "warehouse",
+        "pages": [
+          "guides/clients",
+          "guides/drivers",
+          "guides/trucks"
+        ]
+      },
+      {
+        "group": "Plan operations",
+        "icon": "calendar-days",
+        "pages": [
+          "guides/planning/create-a-plan",
+          "guides/planning/recurring-trips",
+          "guides/planning/review-and-publish"
+        ]
+      },
+      {
+        "group": "Understand Trucklab",
+        "icon": "book-open",
+        "pages": [
+          "concepts/roles-and-permissions",
+          "concepts/planning-workflow",
+          "glossary"
+        ]
+      },
+      {
+        "group": "Help",
+        "icon": "life-ring",
+        "pages": [
+          "troubleshooting/common-issues"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Documentation repository",
+          "href": "https://github.com/Trucklab-io/documentation",
+          "icon": "github"
         }
       ]
     }
@@ -40,14 +72,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Docs feedback",
+        "href": "https://github.com/Trucklab-io/documentation/issues/new"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Trucklab on GitHub",
+      "href": "https://github.com/Trucklab-io"
     }
   },
   "contextual": {
@@ -55,18 +87,17 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Trucklab-io"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.trucklab.io"
     }
   }
 }
