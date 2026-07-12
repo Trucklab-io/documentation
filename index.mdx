@@ -1,22 +1,23 @@
 ---
 title: "Trucklab documentation"
-description: "Set up your Affretio workspace and coordinate clients, drivers, trucks, and planning."
+description: "Learn every customer-facing Affretio workflow, from workspace setup to planning, tracking, and pre-invoicing."
 icon: "truck"
 ---
 
-Affretio is Trucklab's dispatch workspace for transport teams. Use it to keep
-operational resources together, build daily planning, and publish reviewed schedules.
+Affretio is Trucklab's dispatch workspace for transport teams. Use it to maintain
+clients and fleet resources, build reviewed planning, follow transport execution,
+share progress, and prepare completed work for invoicing.
 
 <Note>
   These guides cover the customer-facing product. The Trucklab API is private and
   is not included in this documentation.
 </Note>
 
-## Start with a complete workspace
+## Choose where to start
 
 <CardGroup cols={2}>
-  <Card title="Set up your workspace" icon="sliders" href="/getting-started/initial-setup">
-    Add your company profile, first client, driver, and truck.
+  <Card title="Start using Affretio" icon="rocket" href="/getting-started/initial-setup">
+    Prepare your company, first client, driver, truck, and team access.
   </Card>
   <Card title="Create your first planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
     Create trips, assign resources, and prepare a planning version for review.
@@ -29,11 +30,34 @@ operational resources together, build daily planning, and publish reviewed sched
   </Card>
 </CardGroup>
 
+## Complete product manual
+
+<CardGroup cols={3}>
+  <Card title="Workspace" icon="sliders" href="/guides/workspace/home-and-dashboard">
+    Home summary, Dashboard, company settings, users, and tariff grids.
+  </Card>
+  <Card title="Resources" icon="warehouse" href="/guides/clients">
+    Clients, drivers, absences, mobile access, trucks, and bulk maintenance.
+  </Card>
+  <Card title="Planning" icon="calendar-days" href="/guides/planning/create-a-plan">
+    Trips, assignments, versions, approvals, recurring work, and history.
+  </Card>
+  <Card title="Operations" icon="route" href="/guides/operations/overview">
+    Pre-invoicing, alerts, carriers, charters, customer tracking, and ETA review.
+  </Card>
+  <Card title="Permissions" icon="shield-user" href="/concepts/roles-and-permissions">
+    Understand what Owners, Admins, and Regular users can do.
+  </Card>
+  <Card title="Glossary" icon="book-a" href="/glossary">
+    Find the meaning of product, planning, and operations terminology.
+  </Card>
+</CardGroup>
+
 ## How the workspace fits together
 
 Your company profile owns the drivers and trucks used in operations. Clients are
-the organizations you plan trips for. Each planning is scoped to one client and
-one period, with version history protecting published work.
+the organizations you plan trips for. Planning versions protect published work.
+Operations then turns delivered trips into trackable, reviewable, and billable work.
 
 <CardGroup cols={3}>
   <Card title="Workspace" icon="building">
@@ -42,10 +66,15 @@ one period, with version history protecting published work.
   <Card title="Resources" icon="truck-fast">
     Clients, drivers, trucks, and driver availability.
   </Card>
-  <Card title="Planning" icon="route">
+  <Card title="Planning and operations" icon="route">
     Trips, assignments, recurring schedules, review, and history.
   </Card>
 </CardGroup>
+
+<Warning>
+  Affretio can display operational, personal, financial, and one-time access
+  information. Share screenshots and generated links only with their intended audience.
+</Warning>
 
 <Tip>
   New to Trucklab? Follow the [initial setup checklist](/getting-started/initial-setup)

@@ -1,0 +1,63 @@
+---
+title: "Use planning history and restore"
+description: "Search planning versions, inspect their entries, open a snapshot, and restore approved work."
+icon: "clock-rotate-left"
+---
+
+Planning history is the audit view for Draft, Submitted, Approved, and Rejected
+versions. Use it to verify what happened before changing current planning.
+
+## Find a version
+
+Open **Planning history** and use:
+
+- search by date, route, client, or change summary;
+- the **Client** filter;
+- the **Status** filter;
+- 15, 25, or 50 results per page;
+- **Refresh** to reload the history.
+
+Select **Clear filters** when the expected version is not visible.
+
+## Read a history row
+
+Each version shows the planning day, client, version number and status, trip count,
+route previews, and author or change context. Expand or open the version when you
+need its complete entries rather than relying on the preview.
+
+## Open a historical version
+
+Select the row action to open that version in Planning. Affretio changes the Planning
+view to the chosen snapshot. Reconfirm the version badge before using any action.
+
+## Restore an approved version
+
+Use restore when an earlier accepted snapshot should become the basis for new work.
+
+<Steps>
+  <Step title="Find the approved snapshot">
+    Filter history to **Approved** and locate the correct client and day.
+  </Step>
+  <Step title="Open and compare">
+    Open the version and compare its complete trip list with the current operation.
+  </Step>
+  <Step title="Restore">
+    Open **Actions** and select **Restaurer**.
+  </Step>
+  <Step title="Review the new version">
+    Affretio creates another version based on the snapshot. Check current drivers,
+    trucks, absences, routes, and prices.
+  </Step>
+  <Step title="Submit and approve">
+    Move the restored content through the normal review workflow.
+  </Step>
+</Steps>
+
+<Note>
+  Restore creates a new version. It does not overwrite, delete, or renumber the history.
+</Note>
+
+<Warning>
+  An earlier approved plan can contain assignments or commercial data that are no
+  longer valid. Restore the structure, then validate it against today's resources.
+</Warning>

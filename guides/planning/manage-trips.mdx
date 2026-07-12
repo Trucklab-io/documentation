@@ -1,0 +1,83 @@
+---
+title: "Manage trips and assignments"
+description: "Assign trips, use the schedule board, maintain statuses, perform bulk updates, and export planning."
+icon: "route"
+---
+
+After creating trips, use the Planning board to resolve assignments, timing, and
+operational status before review.
+
+## Assign a trip
+
+- Open an unassigned trip from **Trajets**.
+- Choose an available driver and truck.
+- Use the schedule controls to insert or move work into the correct driver timeline.
+- Recheck the route and timing after moving a trip.
+
+Affretio validates driver availability and linked resources. A truck in Maintenance
+or a driver covered by an absence should not be treated as available.
+
+## Search and filter
+
+Use **Rechercher un chauffeur ou trajet...** to match driver or trip information.
+The status filter includes:
+
+| UI status | Meaning |
+| --- | --- |
+| **Planifié** | Scheduled but not yet confirmed. |
+| **Confirmé** | Assignment and route are confirmed. |
+| **Livré** | Completed transport. |
+| **Annulé** | Transport will not operate. |
+
+Use **Tous les statuts** to return to the complete planning.
+
+## Adjust the board view
+
+- Toggle **Trajets** to show or hide the trip panel.
+- Use **Dézoomer** and **Zoomer** for the timeline scale.
+- Choose a density preset when you need a faster overview or more timing detail.
+- Use the previous and next day arrows to move the planning date.
+
+## Edit one trip
+
+Open the trip detail panel and select edit. Recheck all fields after changing a
+driver, truck, time, route, distance, price, or status. Preserve the trip record
+instead of deleting and recreating it for a simple correction.
+
+## Update several trips
+
+Select visible trips to open the bulk toolbar. You can choose a status and select
+**Mettre à jour**, select all visible rows, or delete the selection when your role permits.
+
+<Warning>
+  Bulk changes apply to the selected trips, including selections that may be outside
+  your immediate visual focus. Confirm the selection count, client, day, and version first.
+</Warning>
+
+## Review real-time execution
+
+Approved planning can display a live connection state such as **Temps réel connecté**,
+**Reconnexion temps réel…**, or **Synchronisation indisponible**. This connection
+updates execution information; it does not replace validation of assignments or route data.
+
+## Print or export
+
+Open **Actions** and choose **Imprimer** or **PDF**. The report contains the selected
+client, version context, driver, truck, schedule, route, load, and status for visible work.
+
+Exporting does not approve or publish a planning version. Apply the required filters
+before export and review the generated file before sharing it.
+
+## Pre-submission checklist
+
+- No unexpected unassigned trips remain.
+- Drivers are available and timing does not overlap.
+- Trucks have a usable status and the intended type.
+- Departure and arrival addresses are complete.
+- Times and overnight offsets are correct.
+- Distance, load, manual price, and status are accurate when known.
+- The client, planning day, and version are correct.
+
+<Card title="Review and publish" icon="check-double" href="/guides/planning/review-and-publish">
+  Submit the completed draft and make an approved version active.
+</Card>

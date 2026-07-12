@@ -1,0 +1,66 @@
+---
+title: "Use Home and Dashboard"
+description: "Read the live workspace summary, fleet indicators, planning status, and setup health."
+icon: "gauge-high"
+---
+
+Home and Dashboard answer different operational questions. **Home** is a quick
+directory and availability summary. **Dashboard** is a broader operating overview.
+
+## Use Home as your starting point
+
+Home contains three resource summaries:
+
+| Summary | What it shows | Detail page |
+| --- | --- | --- |
+| **Drivers** | Present and absent drivers, with availability percentages. | Drivers |
+| **Trucks** | Operating and stopped vehicles, including maintenance. | Trucks |
+| **Clients** | Client count and the number of active recurring trips. | Clients |
+
+Use **Search** to narrow the visible summaries. Select **Open details** to enter a
+directory. Select **Refresh** after another user changes workspace data and you need
+the latest counts immediately.
+
+## Read the Dashboard
+
+The Dashboard combines data from the selected workspace. It includes:
+
+- user, client, driver, and truck counts;
+- scheduled-trip and fleet-utilization indicators;
+- **Fleet Overview** with On route, Available, and Maintenance totals;
+- **Planning Status** with upcoming, confirmed, completed, and cancelled work;
+- **Recent Activity** based on current users, fleet status, and clients;
+- a setup-health summary.
+
+<Note>
+  Dashboard indicators are operational summaries. Use the underlying directory,
+  Planning, or Operations page when you need to verify an individual record.
+</Note>
+
+## Understand fleet utilization
+
+Fleet utilization is the share of trucks currently marked **On route**. A low value
+does not necessarily indicate a problem: check the selected date, fleet status,
+maintenance records, and the operation's expected workload before drawing a conclusion.
+
+## Keep summaries accurate
+
+1. Maintain current truck statuses.
+2. Record driver absences with correct start and end dates.
+3. Mark completed trips **Livré** and cancelled trips **Annulé**.
+4. Pause recurring templates that should no longer generate work.
+5. Refresh the workspace after large or bulk updates.
+
+<Tip>
+  If a count is unexpected, open the corresponding detail page and clear its filters.
+  Pagination and search can hide records without changing the Home total.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="Company settings" icon="building" href="/guides/workspace/company-settings">
+    Maintain the operating company and workspace membership.
+  </Card>
+  <Card title="Common issues" icon="life-ring" href="/troubleshooting/common-issues">
+    Resolve stale summaries, missing actions, and setup blockers.
+  </Card>
+</CardGroup>

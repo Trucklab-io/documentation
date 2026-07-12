@@ -1,0 +1,55 @@
+---
+title: "Billing readiness"
+description: "Understand how delivery state, price, proof, and incidents determine whether a transport can be invoiced."
+icon: "file-circle-check"
+---
+
+Billing readiness is Affretio's completeness check for a transport dossier. A
+record can advance in pre-invoicing only when every required operational and
+commercial condition is satisfied.
+
+## Readiness conditions
+
+```text
+Delivered transport
+       +
+Effective price
+       +
+Required delivery proof
+       +
+No unresolved blocking incident
+       =
+Ready for pre-invoicing
+```
+
+## Effective price
+
+Affretio can use the applicable effective price for the transport. Depending on
+the record, this may come from an explicit manual price or configured valuation.
+Distance and tariff-grid scope must be complete when automatic valuation is expected.
+
+## Delivery proof
+
+When proof is required, the dossier stays incomplete until the receipt exists.
+The receipt may contain the recipient's identity, capacity, signature outcome,
+time, and reservations.
+
+## Blocking incidents
+
+Acknowledging an alert does not automatically resolve the operational issue behind
+it. Update the real transport or incident state before expecting readiness to change.
+
+## Readiness is not invoice status
+
+Readiness answers whether the dossier is complete. Invoice status answers where it
+is in the financial workflow: **À préparer**, **Approuvé**, **Exporté**, or **Facturé**.
+A ready dossier may still be Pending until an administrator reviews it.
+
+<Warning>
+  Never change operational truth only to obtain a ready badge. Correct the missing
+  source information or resolve the real issue.
+</Warning>
+
+<Card title="Prepare pre-invoices" icon="file-invoice-dollar" href="/guides/operations/pre-invoicing">
+  Apply readiness checks in the Operations queue.
+</Card>

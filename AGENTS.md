@@ -41,6 +41,9 @@ Guidance for contributors and coding agents working on the Trucklab documentatio
 - Do not include real customer, driver, vehicle, or planning data in examples.
 - Do not document speculative or unreleased features.
 - Keep screenshots optional and remove sensitive information before committing them.
+- Store screenshots under `images/<area>/`, use descriptive kebab-case names, and
+  add useful alternative text wherever the image appears.
+- Do not use a production or customer workspace to produce documentation screenshots.
 
 ## Contribution workflow
 

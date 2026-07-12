@@ -1,69 +1,86 @@
 ---
 title: "Manage trucks"
-description: "Create fleet records, assign drivers, and keep vehicle status current."
+description: "Create fleet records, assign drivers, maintain vehicle status, and use bulk actions safely."
 icon: "truck"
 ---
 
-Truck records represent the vehicles dispatchers assign to trips. Each record has
-a registration, type, optional driver, operational status, and lifecycle details.
+Truck records represent the fleet vehicles dispatchers assign to trips. Each
+record has an operating organization, registration, type, optional driver, status,
+purchase date, and odometer value.
 
 ## Before you begin
 
-Complete **Own company profile** on the Dashboard. Affretio disables **New truck**
-until your operating company exists.
+An Owner must complete **Settings → Company → Own company profile**. Affretio
+disables **New truck** until the operating company exists.
 
 ## Create a truck
 
 <Steps>
   <Step title="Open Trucks">
-    Open **Home**, find Trucks, and select **Open details**.
+    Select **Trucks** in the sidebar or use **Open details** on Home.
   </Step>
-  <Step title="Start a truck record">
-    Select **New truck**.
+  <Step title="Enter Basics">
+    Select **New truck**, choose the operating company, enter the registration,
+    and choose or enter the truck type.
   </Step>
-  <Step title="Enter the basics">
-    In **Basics**, enter the registration and choose the truck type.
-
-    Use a consistent registration format so dispatchers can find the vehicle quickly.
+  <Step title="Set Assignment">
+    Choose an eligible driver or leave the truck unassigned. Set **Available**,
+    **On route**, or **Maintenance**.
   </Step>
-  <Step title="Set the assignment and status">
-    In **Assignment**, choose a driver or leave the truck **Unassigned**. Set its
-    current status to **Available**, **On route**, or **Maintenance**.
-  </Step>
-  <Step title="Add lifecycle details">
+  <Step title="Add Technical information">
     Enter the purchase date and odometer value when known.
   </Step>
-  <Step title="Review and create">
-    Check **Basics**, **Assignment**, and **Technical details**, then create the truck.
+  <Step title="Review and confirm">
+    Review every section, select the confirmation, and create the truck.
   </Step>
 </Steps>
+
+Affretio suggests common types such as Semi-trailer, Rigid truck, Tanker, Box truck,
+Flatbed, and Refrigerated. Use a consistent vocabulary across drivers, trucks, and tariff grids.
 
 ## Truck statuses
 
 | Status | Meaning | Planning guidance |
 | --- | --- | --- |
 | **Available** | Ready for operational assignment. | Assign normally. |
-| **On route** | Currently operating a trip. | Check timing before another assignment. |
-| **Maintenance** | Temporarily unavailable for operations. | Do not assign until maintenance is complete. |
+| **On route** | Currently operating. | Check timing before another assignment. |
+| **Maintenance** | Temporarily stopped. | Do not assign until it returns to service. |
 
-## Change the assigned driver
+## Search and filters
 
-Edit the truck, open **Assignment**, and choose another driver or **Unassigned**.
-This updates the vehicle record; review existing trips separately before changing
-operational planning.
+Search the fleet by registration, truck type, driver, or organization. Filter by
+status and truck type. Choose 15, 25, or 50 records per page when maintaining a larger fleet.
+
+## Change a regular driver
+
+1. Find the truck and select edit.
+2. Open **Assignment**.
+3. Choose another eligible driver or leave it unassigned.
+4. Review and save the truck.
+5. Review current planning separately.
+
+Changing the truck record does not automatically rewrite historical assignments.
+
+## Perform bulk updates
+
+Select the intended rows and use the bulk toolbar to apply a status or delete the
+selected records. Confirm the selection count and clear filters if you need to see
+the complete fleet before acting.
+
+<Warning>
+  A bulk Maintenance or delete action can affect many planning choices. Review the
+  selected registrations and active planning before confirming it.
+</Warning>
 
 ## Keep fleet data reliable
 
-- Update status when a truck enters or leaves maintenance.
-- Update the odometer using your team's agreed cadence.
-- Edit a registration correction instead of creating a duplicate truck.
-- Search by registration or driver before adding a new record.
+- Normalize registration spelling and punctuation.
+- Update status as vehicles enter or leave maintenance.
+- Record odometer readings using one team-wide cadence.
+- Use truck types that match tariff-grid scopes.
+- Edit a correction instead of creating a duplicate.
+- Check active and historical planning before deletion.
 
-<Warning>
-  Before deleting a truck, check active and historical planning. Referenced fleet
-  records may be protected from deletion.
-</Warning>
-
-<Card title="Create a planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
-  Assign drivers and trucks to client trips.
+<Card title="Create planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
+  Assign available drivers and trucks to client trips.
 </Card>
