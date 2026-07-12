@@ -1,0 +1,67 @@
+---
+title: "Prepare pre-invoices"
+description: "Filter delivered work, resolve billing blockers, verify proof, and advance the invoice lifecycle."
+icon: "file-invoice-dollar"
+---
+
+Open **Operations → Pré-facturation** to review transport records before invoicing.
+The page separates records that are ready from records requiring more information.
+
+## Filter the work queue
+
+1. Choose **30 jours**, **90 jours**, **Cette année**, or enter **Du** and **Au**.
+2. Choose one client or keep **Tous les clients**.
+3. Select **Appliquer**.
+4. Use **Tous**, **Prêts**, or **À compléter** for readiness.
+
+The summary shows the number and value of ready records and the number of blocked records.
+
+## Open a transport dossier
+
+Select the row action. The dossier includes:
+
+- route, client, date, and transport identifier;
+- effective price;
+- readiness result and blocker list;
+- invoice status progression;
+- delivery receipt details when available.
+
+## Resolve readiness blockers
+
+| Blocker | What to verify |
+| --- | --- |
+| **Transport non livré** | Mark the trip delivered only after actual completion. |
+| **Prix absent** | Add a valid manual price or ensure an applicable tariff grid and distance. |
+| **Preuve de livraison manquante** | Obtain the required signed delivery receipt. |
+| **Incident non résolu** | Resolve the operational issue before billing. |
+
+See [Billing readiness](/concepts/billing-readiness) for the complete model.
+
+## Follow the invoice lifecycle
+
+| Status | UI label | Meaning |
+| --- | --- | --- |
+| Pending | **À préparer** | The dossier still needs preparation or approval. |
+| Approved | **Approuvé** | Internal checks are complete. |
+| Exported | **Exporté** | The record has been exported for the billing process. |
+| Invoiced | **Facturé** | The external invoice has been recorded. |
+
+Open a ready dossier and use the next available action. Affretio disables progression
+while the dossier is incomplete. Enter the invoice reference when advancing to **Facturé**;
+it is required to finish the cycle.
+
+## Verify proof of delivery
+
+A signed receipt can show the recipient's name, capacity, signature state, time,
+and any reservations. Treat this as operational evidence and personal information.
+
+<Warning>
+  Do not advance a dossier merely to clear the queue. A delivered status, effective
+  price, proof, and incident state must represent the real operation.
+</Warning>
+
+## Export safely
+
+Apply the intended client and date filters, review the ready queue, and verify the
+output before sending it to an accounting system or another person. Export status
+does not itself prove that an external invoice was issued.

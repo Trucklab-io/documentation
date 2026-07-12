@@ -33,10 +33,17 @@ Mintlify production deployment through the connected GitHub App.
 
 ## Documentation scope
 
-- Getting started and workspace setup
-- Clients, drivers, and trucks
-- Daily and recurring planning
-- Planning review and publication
+- Authentication, first-time setup, and workspace membership
+- Company settings, dashboard indicators, and tariff grids
+- Clients, drivers, driver absences, and trucks
+- Daily planning, recurring trips, review, publication, and history
+- Pre-invoicing, alerts, subcontracting, tracking shares, and route ETAs
 - Roles, permissions, troubleshooting, and terminology
+
+## Screenshots
+
+Screenshots belong under `images/` and must use fictional or empty-state data.
+Before adding a screenshot, confirm it contains no customer names, personal data,
+vehicle registrations, private links, invoice references, or planning details.
 
 The API reference will be added separately when the API becomes public.

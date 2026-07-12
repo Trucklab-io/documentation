@@ -1,32 +1,45 @@
 ---
 title: "Create a planning"
-description: "Create client trips, assign drivers and trucks, and prepare a draft schedule."
+description: "Open a client planning, choose the day, create a draft, and add the first trip."
 icon: "calendar-plus"
 ---
 
-Use Planning to build the operational schedule for one client and day. Your edits
-are stored in a planning version so the team can review them before publication.
+Planning organizes one client's trips for a selected day. Affretio stores edits in
+a numbered version so the team can distinguish draft work from approved operations.
 
 ## Before you begin
 
-- Create the client you are planning for.
-- Add the drivers and trucks you expect to assign.
+- Create the client.
+- Add drivers and trucks you expect to assign.
 - Record known driver absences.
-- Confirm the active workspace.
+- Confirm the active workspace and your role.
 
-## Open the planning
+## Understand the Planning layout
+
+| Area | Purpose |
+| --- | --- |
+| **Trajets** | Create, find, and work with trips. |
+| Date header | Select **Jour du planning**, move to the previous or next day, and read the active version. |
+| **Mes camions disponibles** | Review vehicles available for assignment. |
+| Filter bar | Search drivers or trips and filter by status. |
+| Schedule board | Review driver timelines and assigned work. |
+| **Actions** | Submit, approve, reject, restore, print, or export when available. |
+
+## Open the correct planning
 
 <Steps>
   <Step title="Open Planning">
-    Select **Planning** in the main navigation.
+    Select **Planning** in the sidebar.
   </Step>
   <Step title="Choose a client">
-    Select a client organization. If there are no clients, use **Ajouter un client**
-    and complete the client setup first.
+    Choose the client organization. If the directory is empty, use **Ajouter un client**.
   </Step>
   <Step title="Choose the day">
-    Use **Jour du planning** or the previous and next day buttons to open the date
-    you want to schedule.
+    Use **Jour du planning** or the arrow buttons to open the operating day.
+  </Step>
+  <Step title="Confirm the version">
+    Read the version badge. Make sure you are editing a Draft, not only reviewing
+    an Approved or Submitted snapshot.
   </Step>
 </Steps>
 
@@ -37,62 +50,45 @@ are stored in a planning version so the team can review them before publication.
     Open **Trajets** and select **Créer un trajet**.
   </Step>
   <Step title="Confirm the day">
-    Enter the trip day. This field is required and cannot be changed after the trip is created.
+    Enter the trip day. The creation flow treats this as a required, fixed identity
+    for the trip; create the trip on the correct date.
   </Step>
   <Step title="Assign resources or plan later">
-    Choose a driver and truck, or use **Assigner plus tard** to create an unassigned trip.
-
-    An unavailable driver cannot be assigned for a date covered by an absence.
+    Choose a driver and compatible truck, or use **Assigner plus tard**. An absent
+    driver cannot be assigned on a covered date.
   </Step>
-  <Step title="Enter the schedule">
-    Add departure and arrival times when known. If you enter an arrival time, you
-    must also enter a departure time. Overnight arrivals are displayed with a day offset.
+  <Step title="Enter schedule information">
+    Add departure and arrival times. If you enter an arrival, you must also enter
+    a departure. Affretio represents overnight arrival with a day offset.
   </Step>
   <Step title="Enter the route">
-    Provide complete departure and arrival addresses. Both addresses are required.
-    Choose an address suggestion when one matches the location.
+    Add complete departure and arrival addresses. Select a matching address suggestion
+    when one is available.
   </Step>
-  <Step title="Add operational details">
-    Add load, distance, manual price, and status when available. New trips start as **Planifié**.
+  <Step title="Add commercial and operating details">
+    Enter load, distance, manual price, and status when known. A new trip starts as **Planifié**.
   </Step>
   <Step title="Save the trip">
-    Save the form. The trip appears in the draft planning version.
+    Save the form and verify that the trip appears in the current version.
   </Step>
 </Steps>
 
-## Assign trips on the board
+## Required and conditional fields
 
-You can assign or move trips from the planning board after creation.
-
-- Use **Mes camions disponibles** to find an appropriate truck.
-- Search by driver, city, registration, or route.
-- Use the insert or move controls to place a trip in a driver's schedule.
-- Resolve any driver availability or timing warning before continuing.
-
-## Use planning statuses
-
-| Status | Use it when |
+| Field | Rule |
 | --- | --- |
-| **Planifié** | The trip is scheduled but not yet confirmed. |
-| **Confirmé** | The assignment and route are confirmed. |
-| **Livré** | The trip has been completed. |
-| **Annulé** | The trip will not be operated. |
+| Trip day | Required. |
+| Departure address | Required. |
+| Arrival address | Required. |
+| Departure time | Required when an arrival time is entered. |
+| Driver and truck | Optional when you choose **Assigner plus tard**. |
+| Distance and price | Optional for planning, but may block pre-invoicing later. |
 
-## Check the draft
+<Warning>
+  Always verify the selected client, date, and version before adding work. A correct
+  route in the wrong client planning is still an operational error.
+</Warning>
 
-Before submission:
-
-- Search for unassigned trips.
-- Confirm each driver is available.
-- Check truck status and overlapping times.
-- Verify complete departure and arrival addresses.
-- Confirm the client and planning day.
-
-<Tip>
-  Use **Imprimer** or **PDF** in **Actions** to review the visible planning outside
-  the board. Exporting does not publish the planning.
-</Tip>
-
-<Card title="Review and publish" icon="check-double" href="/guides/planning/review-and-publish">
-  Submit the draft and make the reviewed version active.
+<Card title="Manage trips on the board" icon="route" href="/guides/planning/manage-trips">
+  Assign, move, filter, update, print, and export daily work.
 </Card>

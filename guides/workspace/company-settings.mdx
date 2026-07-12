@@ -1,0 +1,69 @@
+---
+title: "Configure company and users"
+description: "Maintain the operating company profile, workspace membership, roles, and user status."
+icon: "building-shield"
+---
+
+Open **Settings** to manage information that applies to the complete workspace.
+Settings has **Company**, **Users**, and **Tariffs** tabs.
+
+## Update the company profile
+
+Only an Owner can edit **Own company profile**.
+
+<Steps>
+  <Step title="Open Company settings">
+    Select **Settings → Company**.
+  </Step>
+  <Step title="Enter the operating identity">
+    Enter the company name. Add the street address, city, country, and postal code
+    when available.
+  </Step>
+  <Step title="Save the profile">
+    Select **Save company profile**.
+  </Step>
+</Steps>
+
+The company profile identifies the transport operation that owns the fleet. You
+must complete it before creating trucks.
+
+## Review workspace access
+
+Open **Settings → Users**. **Access list** shows each user's name, email, role,
+access status, and account association.
+
+| Access property | Meaning |
+| --- | --- |
+| **Role** | Owner, Admin, or Regular permissions. |
+| **Active** | The user can authenticate and use the workspace. |
+| **Inactive** | Access remains recorded but authentication is disabled. |
+
+Owners can invite users, change roles or status in bulk, and delete access. Admins
+and Regular users can review only the controls their role permits.
+
+<Warning>
+  Confirm the selected users and workspace before any bulk status, role, or delete
+  action. Do not disable the only person responsible for workspace ownership.
+</Warning>
+
+## Handle role changes safely
+
+1. Confirm the person's current responsibility.
+2. Check whether planning is waiting for their review.
+3. Select the least privileged role that supports their work.
+4. Apply the role change.
+5. Ask the user to sign out and back in if the new navigation does not appear.
+
+See [Roles and permissions](/concepts/roles-and-permissions) for the capability matrix.
+
+## Protect account access
+
+- Use a unique temporary password when creating access.
+- Share the password through a secure, separate channel.
+- Ask the user to reset the temporary password.
+- Set access to **Inactive** when a temporary suspension is more appropriate than deletion.
+- Remove access promptly when a person should no longer use the workspace.
+
+<Card title="Configure tariff grids" icon="money-bill-transfer" href="/guides/workspace/tariff-grids">
+  Create automatic trip valuation rules by client, truck type, and distance.
+</Card>

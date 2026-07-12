@@ -1,0 +1,50 @@
+---
+title: "Review routes and ETA"
+description: "Filter approved transports by period and interpret planned route, distance, delay, and arrival estimates."
+icon: "map-location-dot"
+---
+
+Open **Operations → Routes & ETA** to compare planned route information across a
+date range. This view is designed for operational review, not live GPS tracking.
+
+## Choose a period
+
+1. Select **30 jours**, **90 jours**, **Cette année**, or enter **Du** and **Au**.
+2. Confirm the end date is not before the start date.
+3. Keep the inclusive range within 366 days.
+4. Select **Appliquer**.
+
+## Interpret the result
+
+The route list can combine:
+
+- transport date and identifier;
+- departure and arrival locations;
+- client;
+- planned distance;
+- planned departure and duration;
+- latest unresolved delay;
+- calculated estimated arrival.
+
+## How ETA is calculated
+
+Affretio derives ETA from the planned trip date, departure time, duration, and
+latest unresolved delay. If the required planning fields are missing, no reliable
+ETA can be shown.
+
+<Note>
+  The page explicitly uses Planning data, not vehicle GPS. Treat the ETA as an
+  operational estimate and communicate that limitation when sharing it.
+</Note>
+
+## Improve ETA quality
+
+- Enter a realistic departure time and duration.
+- Maintain route distance and addresses.
+- Record delays promptly and resolve them when no longer applicable.
+- Correct the Planning entry instead of compensating with informal notes.
+- Use customer tracking when a client needs a controlled external view.
+
+<Card title="Share client tracking" icon="link" href="/guides/operations/client-tracking">
+  Create a time-limited view of status, ETA, delay, and delivery outcome.
+</Card>

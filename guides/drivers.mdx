@@ -1,70 +1,95 @@
 ---
 title: "Manage drivers"
-description: "Create drivers, record contact details, and maintain operational availability."
+description: "Create drivers, maintain availability, share mobile access, and perform safe bulk updates."
 icon: "id-card"
 ---
 
-Driver records make people available for assignment in planning. They also hold
-contact information, preferred truck type, availability periods, and mobile access.
+Driver records make people available for truck and trip assignment. They hold
+identity, contact, preferred truck type, availability, and mobile-access controls.
 
 ## Create a driver
 
 <Steps>
   <Step title="Open Drivers">
-    Open **Home**, find Drivers, and select **Open details**.
+    Select **Drivers** in the sidebar or use **Open details** on Home.
   </Step>
   <Step title="Start a driver record">
     Select **New driver**.
   </Step>
-  <Step title="Enter identity information">
-    In **Identity**, select the company and enter the driver's first and last name.
+  <Step title="Enter Identity">
+    Choose the operating organization and enter the driver's first and last name.
   </Step>
-  <Step title="Add contact and operating details">
-    In **Contact**, add the phone number, address, and preferred truck type when available.
+  <Step title="Add Contact information">
+    Enter the phone number and address when available. Choose the preferred truck type.
   </Step>
   <Step title="Review and create">
-    Review the identity and contact summary, confirm the information, and create the driver.
+    Verify the identity, organization, and contact summary, then create the driver.
   </Step>
 </Steps>
 
+## Find and filter drivers
+
+Search by driver name, phone, truck type, assigned registration, or organization.
+Use directory filters to narrow availability and truck type. Clear filters before
+assuming a driver record is missing.
+
+The availability badge can show:
+
+- **Disponible** when no current absence covers today;
+- **Absent · Vacances** for vacation;
+- **Absent · Maladie** for sick leave;
+- **Absent · Autre absence** for another operational absence.
+
 ## Record an absence
 
-Use a driver availability panel to prevent assignments during an absence.
-
-1. Open **Drivers** and locate the driver.
-2. Open the driver's availability or absence controls.
-3. Choose the reason and enter the **Du** and **Au** dates.
-4. Add optional context without including sensitive medical details.
+1. Find the driver and open the availability control.
+2. Choose **Vacances**, **Maladie**, or **Autre absence**.
+3. Enter the required **Du** and **Au** dates.
+4. Add an optional note containing only operationally necessary information.
 5. Save the absence.
 
-The Planning screen marks an unavailable driver and prevents conflicting assignments
-for covered dates.
+The panel shows the current status and future absences. You can edit or delete an
+incorrect period. Use **Marquer comme disponible** to end the current unavailability
+when the driver returns earlier than expected.
 
 <Warning>
-  Record only the operational information dispatchers need. Do not add medical or
-  other sensitive personal data to the optional note.
+  Do not place medical details or other sensitive personal information in absence
+  notes. Dispatchers need the availability period, not a diagnosis.
 </Warning>
 
-## Create a driver mobile link
+## How absences affect planning
 
-Open the driver's actions and choose the mobile access option. Affretio displays a
-driver-specific link that you can share through a secure channel.
+Affretio prevents a conflicting driver assignment when the trip date overlaps a
+recorded absence. You can choose another driver or use **Assigner plus tard**.
+Correct the absence only when its dates are wrong.
+
+## Create driver mobile access
+
+Open the driver's actions and choose the mobile-access option. Affretio displays a
+driver-specific link.
 
 - Treat the link as access information.
-- Send it only to the intended driver.
-- Revoke driver mobile sessions if a device or link is no longer trusted.
+- Copy it only for the intended driver.
+- Use a secure channel.
+- Revoke driver mobile sessions when a device or link is no longer trusted.
 
-## Update or remove a driver
+## Edit, delete, and bulk update
 
-Edit the existing record when a driver's contact details or truck type changes.
-Before deleting a driver, check active planning, recurring trips, truck assignment,
-and planning history.
+Edit a record when contact or preferred truck information changes. The bulk toolbar
+can update selected drivers or delete several selected records, depending on your role.
+
+Before deletion, check:
+
+- assigned trucks;
+- current and historical planning;
+- recurring trip defaults;
+- mobile sessions and operational history.
 
 <Note>
-  If a driver should temporarily disappear from assignments, record an absence
-  instead of deleting the driver.
+  Use an absence to hide a driver temporarily from assignments. Deletion is for a
+  record that should no longer remain in the workspace and is not protected by references.
 </Note>
 
 <Card title="Manage trucks" icon="truck" href="/guides/trucks">
-  Create vehicles and associate regular drivers.
+  Maintain regular driver assignments and vehicle availability.
 </Card>

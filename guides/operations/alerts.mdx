@@ -1,0 +1,46 @@
+---
+title: "Triage operational alerts"
+description: "Review, acknowledge, and investigate alerts for late, blocked, unconfirmed, or incomplete transports."
+icon: "bell"
+---
+
+Open **Operations → Alertes** to find missions requiring dispatcher attention.
+Affretio monitors approved transport execution and delivery evidence.
+
+## Alert types
+
+| Alert | Meaning |
+| --- | --- |
+| **Arrivée dépassée** | The expected arrival has passed. |
+| **Transport bloqué** | Execution reports a blocking issue. |
+| **Preuve manquante** | Required delivery proof is not available. |
+| **Départ en retard** | The planned departure has passed without expected progress. |
+| **Mission non acquittée** | The mission has not been acknowledged as expected. |
+
+## Work the queue
+
+1. Keep **À traiter** selected to see unread alerts.
+2. Read the alert type, route, client, detection time, and due time.
+3. Open the associated Planning or operational context when more detail is required.
+4. Coordinate the corrective action outside the alert record as appropriate.
+5. Select **Accuser réception** when a responsible person has taken ownership.
+
+Acknowledgement changes the alert to **Prise en compte**. It does not resolve the
+underlying delay, blocked transport, or missing proof by itself.
+
+## Use alert history
+
+Select **Historique** to review both active and acknowledged alerts. History helps
+you distinguish a repeated operational problem from a newly detected one.
+
+## Suggested response by alert
+
+- For late departure or arrival, verify the planned time, latest delay, and ETA.
+- For a blocked transport, identify the blocker and record the operational resolution.
+- For missing proof, confirm actual delivery and obtain the expected receipt.
+- For an unacknowledged mission, confirm the intended driver or carrier received it.
+
+<Warning>
+  Acknowledgement is an ownership signal, not a completion signal. Keep the related
+  trip and billing dossier accurate until the real-world issue is resolved.
+</Warning>

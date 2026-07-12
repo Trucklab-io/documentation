@@ -1,0 +1,78 @@
+---
+title: "Configure tariff grids"
+description: "Create distance bands, minimum prices, and client or truck-specific pricing rules."
+icon: "money-bill-trend-up"
+---
+
+Tariff grids provide automatic trip valuation by distance and truck type. Open
+**Settings → Tariffs** to review existing grids or create a new one.
+
+## Decide the grid scope
+
+A grid can apply to:
+
+- all clients or one client;
+- all truck types or one truck type;
+- one currency;
+- one or more distance bands;
+- active valuation or inactive storage.
+
+Create the most specific grid only when the price truly differs. A small number of
+well-scoped grids is easier to audit than many overlapping grids.
+
+## Create a grid
+
+<Steps>
+  <Step title="Open the tariff editor">
+    Select **Settings → Tariffs** and find **New grid**.
+  </Step>
+  <Step title="Name and scope the grid">
+    Enter a descriptive name. Choose a client or leave **All clients** selected.
+    Enter a truck type or leave it empty for all types.
+  </Step>
+  <Step title="Set the price floor">
+    Enter **Minimum price** in cents and confirm the three-letter currency code.
+  </Step>
+  <Step title="Create distance bands">
+    For each band, enter **From km** and an optional **To km**. Choose **Fixed** or
+    **Per km**, then enter the price in cents.
+  </Step>
+  <Step title="Activate and save">
+    Keep **Active** selected when the grid should participate in valuation. Select
+    **Create grid**.
+  </Step>
+</Steps>
+
+## Design non-overlapping bands
+
+| Example band | Price type | Result |
+| --- | --- | --- |
+| 0–50 km | Fixed | One amount for any trip inside the band. |
+| 51–200 km | Per km | Distance multiplied by the configured rate. |
+| 201–∞ km | Per km | Open-ended rate for longer trips. |
+
+Use continuous ranges and avoid overlaps or gaps unless your commercial policy
+requires them. Keep monetary inputs in cents: for example, `12500` represents
+€125.00 when the currency is EUR.
+
+<Warning>
+  Tariff configuration affects financial preparation. Review the client, truck
+  type, currency, distance boundaries, and cent-based values before activation.
+</Warning>
+
+## Edit, deactivate, or delete
+
+- Select the edit action to load an existing grid into **Edit grid**.
+- Select **Save grid** after changing its scope, bands, or status.
+- Clear **Active** to keep the grid without using it for new valuation.
+- Delete only when the grid is no longer required for review or operations.
+
+## When a trip price is still missing
+
+Check that the trip has a usable distance, the expected client and truck type, and
+an active grid whose band contains that distance. A manual trip price can provide
+an explicit value when the operation intentionally differs from standard pricing.
+
+<Card title="Billing readiness" icon="file-circle-check" href="/concepts/billing-readiness">
+  Understand why Operations may still mark a delivered trip as incomplete.
+</Card>

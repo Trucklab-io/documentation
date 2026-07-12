@@ -16,12 +16,22 @@
         "pages": [
           "index",
           "getting-started/overview",
+          "getting-started/sign-in",
           "getting-started/initial-setup",
           "getting-started/invite-your-team"
         ]
       },
       {
-        "group": "Manage your workspace",
+        "group": "Workspace and settings",
+        "icon": "sliders",
+        "pages": [
+          "guides/workspace/home-and-dashboard",
+          "guides/workspace/company-settings",
+          "guides/workspace/tariff-grids"
+        ]
+      },
+      {
+        "group": "Clients and resources",
         "icon": "warehouse",
         "pages": [
           "guides/clients",
@@ -34,8 +44,22 @@
         "icon": "calendar-days",
         "pages": [
           "guides/planning/create-a-plan",
+          "guides/planning/manage-trips",
           "guides/planning/recurring-trips",
-          "guides/planning/review-and-publish"
+          "guides/planning/review-and-publish",
+          "guides/planning/history-and-restore"
+        ]
+      },
+      {
+        "group": "Run operations",
+        "icon": "route",
+        "pages": [
+          "guides/operations/overview",
+          "guides/operations/pre-invoicing",
+          "guides/operations/alerts",
+          "guides/operations/carriers-and-charters",
+          "guides/operations/client-tracking",
+          "guides/operations/routes-and-eta"
         ]
       },
       {
@@ -44,6 +68,7 @@
         "pages": [
           "concepts/roles-and-permissions",
           "concepts/planning-workflow",
+          "concepts/billing-readiness",
           "glossary"
         ]
       },
@@ -78,8 +103,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Trucklab on GitHub",
-      "href": "https://github.com/Trucklab-io"
+      "label": "Open Affretio",
+      "href": "https://staging.51.210.14.34.sslip.io"
     }
   },
   "contextual": {
@@ -97,7 +122,7 @@
   },
   "seo": {
     "metatags": {
-      "canonical": "https://docs.trucklab.io"
+      "canonical": "https://trucklab.mintlify.io"
     }
   }
 }

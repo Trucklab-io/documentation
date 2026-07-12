@@ -1,69 +1,95 @@
 ---
 title: "Manage clients"
-description: "Create and maintain the client organizations used in planning and tariff grids."
+description: "Create, find, edit, and safely maintain client organizations used by planning and operations."
 icon: "building"
 ---
 
-Clients are the organizations your transport company plans trips for. You need at
-least one client before you can create or publish a planning.
+Clients are the organizations your transport company plans trips for. Client data
+also scopes recurring trips, tariff grids, planning history, tracking, and billing work.
 
 ## Create a client
 
 <Steps>
   <Step title="Open Clients">
-    Open **Home**, find Clients, and select **Open details**.
+    Select **Clients** in the sidebar, or open **Home** and select **Open details**
+    for Clients.
   </Step>
   <Step title="Start a new client">
     Select **New client**.
   </Step>
-  <Step title="Enter the basics">
-    In **Basics**, enter the client name. This name appears in planning selectors,
-    recurring trips, history, and exports.
+  <Step title="Enter Basics">
+    Enter **Client name**. Use the operational name dispatchers expect to see in
+    planning selectors and exports.
   </Step>
-  <Step title="Add the location">
-    In **Location**, enter the street address, country, city, and postal code when available.
+  <Step title="Add the Location">
+    Enter at least three address characters to display suggestions. Select the
+    correct suggestion to populate the address, city, country, and postal code,
+    or enter these fields manually.
   </Step>
   <Step title="Review and create">
-    Check the summary in **Review**, confirm the information is correct, and select
-    **Create client**.
+    Check **Basics** and **Location**, then select **Create client**.
   </Step>
 </Steps>
 
-<Tip>
-  Use the client's operational name—the name dispatchers expect to see while planning.
-</Tip>
+Only the client name is required, but a complete location makes route creation
+and data review faster.
+
+## Find a client
+
+Use **Search clients** to match the client name, country, city, postal code, and
+related recurring-trip or tariff counts. Choose 15, 25, or 50 records per page.
+Select **Clear filters** when a known client does not appear.
+
+## Read the directory
+
+Each client row helps you review:
+
+- the organization name;
+- location information;
+- associated recurring trips;
+- associated tariff grids;
+- edit actions.
+
+These counts are useful before changing or deleting a record.
 
 ## Edit a client
 
-1. Open **Clients**.
-2. Find the client using the search field.
-3. Open the row actions and choose edit.
-4. Update the relevant fields.
-5. Review the change and select **Save client**.
+1. Find the client.
+2. Select the row's edit action.
+3. Update **Basics** or **Location**.
+4. Review the complete record.
+5. Select **Save client**.
 
-Changes to the client name appear anywhere that client is referenced. Existing
-planning history remains associated with the same client record.
+Changing the client name updates how the same record appears across the workspace.
+Its existing planning and operational associations remain connected.
 
-## Find and review clients
+## Before deleting or replacing a client
 
-Use **Search clients** to filter by client information. You can show 15, 25, or 50
-clients per page when reviewing a larger directory.
+Check the client's:
 
-## Before deleting a client
-
-Check for associated planning, recurring trips, and tariff grids. Trucklab may
-reject deletion when the client is still referenced by operational data.
+- current and historical planning versions;
+- recurring trip templates;
+- tariff grids;
+- tracking shares, charters, and pre-invoicing work.
 
 <Warning>
-  Do not delete and recreate a client just to correct its name or address. Edit the
-  existing client so its planning history stays connected.
+  Do not delete and recreate a client to correct its name or address. Edit the
+  existing record so planning and operational history remain connected.
 </Warning>
 
+## Data-quality checklist
+
+- Use one client record per legal or operational entity.
+- Avoid abbreviations that different dispatchers may interpret differently.
+- Confirm the suggested address before accepting it.
+- Search before creating a record to prevent duplicates.
+- Keep tariff grids scoped to the correct client after mergers or name changes.
+
 <CardGroup cols={2}>
-  <Card title="Create a planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
-    Build trips for the client.
+  <Card title="Create planning" icon="calendar-plus" href="/guides/planning/create-a-plan">
+    Build and assign trips for the client.
   </Card>
-  <Card title="Create recurring trips" icon="repeat" href="/guides/planning/recurring-trips">
-    Automate repeated client routes.
+  <Card title="Recurring trips" icon="repeat" href="/guides/planning/recurring-trips">
+    Automate stable, repeated routes.
   </Card>
 </CardGroup>

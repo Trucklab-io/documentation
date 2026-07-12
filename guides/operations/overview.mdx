@@ -1,0 +1,74 @@
+---
+title: "Operations overview"
+description: "Turn approved transport work into monitored, shareable, subcontracted, and billable operations."
+icon: "route"
+---
+
+**Operations** brings post-planning workflows together. It is available to Owners
+and Admins and uses approved transport data from the active workspace.
+
+## Access requirements
+
+| Role | Operations access |
+| --- | :---: |
+| Owner | Yes |
+| Admin | Yes |
+| Regular | No |
+
+Regular users who open the route see an access-denied view because financial and
+subcontracting workflows are restricted to administrators.
+
+## Operations sections
+
+| Tab | Use it to |
+| --- | --- |
+| **Pré-facturation** | Check readiness, proof, price, and invoice progression. |
+| **Alertes** | Acknowledge late, blocked, unconfirmed, or missing-proof work. |
+| **Affrètement** | Assign a transport to a carrier and follow the response. |
+| **Transporteurs** | Maintain the carrier partner directory. |
+| **Suivi client** | Create and revoke time-limited customer tracking access. |
+| **Routes & ETA** | Review planned distance, timing, delay, and estimated arrival. |
+
+The **À jour** indicator means the live Operations view is connected. **Reconnexion**
+means Affretio is attempting to restore updates. Use the refresh action when you
+need to reload all sections explicitly.
+
+## Recommended operating sequence
+
+<Steps>
+  <Step title="Approve planning">
+    Publish a reviewed version so its trips become active operations.
+  </Step>
+  <Step title="Follow execution">
+    Use Planning and **Alertes** to resolve late starts, delays, blocks, and missing proof.
+  </Step>
+  <Step title="Share or subcontract when required">
+    Create a customer tracking link or an affrètement for the selected transport.
+  </Step>
+  <Step title="Complete delivery evidence">
+    Confirm the transport is delivered and a signed proof is available when required.
+  </Step>
+  <Step title="Prepare invoicing">
+    Resolve readiness blockers, approve the pre-invoice, export, then record invoicing.
+  </Step>
+</Steps>
+
+## Period filters
+
+Pre-invoicing and Routes & ETA offer **30 jours**, **90 jours**, and **Cette année**
+presets plus required **Du** and **Au** dates. The selected inclusive period cannot
+exceed 366 days.
+
+<Warning>
+  Operations includes financial data and one-time secret links. Confirm the client,
+  transport, price, recipient, and selected workspace before sharing or advancing work.
+</Warning>
+
+<CardGroup cols={2}>
+  <Card title="Pre-invoicing" icon="file-invoice-dollar" href="/guides/operations/pre-invoicing">
+    Resolve blockers and move completed work through billing.
+  </Card>
+  <Card title="Operational alerts" icon="bell" href="/guides/operations/alerts">
+    Triage exceptions that need dispatcher attention.
+  </Card>
+</CardGroup>

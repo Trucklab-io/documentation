@@ -1,0 +1,61 @@
+---
+title: "Share client tracking"
+description: "Create time-limited tracking links, understand the public view, and revoke access."
+icon: "link"
+---
+
+**Operations → Suivi client** creates a public, time-limited view for one transport.
+The client can see relevant progress without an Affretio workspace account.
+
+## Create a tracking link
+
+<Steps>
+  <Step title="Open Suivi client">
+    Select **Créer un accès**.
+  </Step>
+  <Step title="Choose the transport">
+    Select the intended transport by date, route, and client.
+  </Step>
+  <Step title="Set validity">
+    Choose 24 hours, 3 days, 7 days, or 30 days.
+  </Step>
+  <Step title="Create and copy">
+    Select **Créer le lien**. Copy the secret while the banner is visible.
+  </Step>
+  <Step title="Send securely">
+    Send the link only to the intended client contact and explain its expiry.
+  </Step>
+</Steps>
+
+## What the public page can show
+
+The tracking view can include the trip date, cities, execution status, estimated
+arrival, latest delay, delivery time, and delivery-receipt outcome.
+
+The share does not grant general workspace access.
+
+## Share states
+
+| State | Meaning |
+| --- | --- |
+| **Actif** | Link is usable. |
+| **Expire bientôt** | Less than approximately 24 hours remain. |
+| **Expiré** | Validity period ended. |
+| **Révoqué** | An administrator ended access early. |
+
+## Revoke a link
+
+Find the share and select **Révoquer**. Confirm the action. Revocation is permanent
+for that URL; create another share if access is later required again.
+
+<Warning>
+  Treat every tracking URL as a secret. Do not place it in tickets, public chat,
+  documentation, or screenshots. Verify the selected client and transport before sending it.
+</Warning>
+
+## If a client cannot open tracking
+
+- Confirm the URL was copied completely.
+- Check whether it is Expired or Revoked.
+- Confirm the client is using the newest link.
+- Create a replacement only after confirming continued access is appropriate.

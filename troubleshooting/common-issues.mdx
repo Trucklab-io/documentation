@@ -1,103 +1,125 @@
 ---
 title: "Common issues"
-description: "Resolve frequent access, workspace, resource, and planning problems."
+description: "Resolve frequent sign-in, settings, resource, planning, tracking, and billing problems."
 icon: "life-ring"
 ---
 
-Start with the checks below before changing or recreating operational data.
+Start with the smallest check that can explain the problem. Avoid deleting or
+recreating operational data until you understand its references.
 
 ## I cannot sign in
 
-1. Confirm the email address used for Trucklab access.
-2. Check Caps Lock and try the password again.
-3. Use the password-reset flow.
-4. Ask an Owner to confirm that your user still appears in **Access list**.
-5. If you have access to multiple workspaces, confirm you are opening the expected one.
+1. Confirm the exact email address used for workspace access.
+2. Check Caps Lock and enter the password again.
+3. Select **Forgot password?** and complete the reset flow.
+4. Ask an Owner to confirm your record under **Settings → Users → Access list**.
+5. Ask the Owner to confirm that your access is **Active**.
 
-Do not create a duplicate user as the first recovery step.
+Do not select **Create workspace** as a sign-in recovery step.
 
-## An action is hidden or disabled
+## An action or page is hidden
 
-The most common causes are:
+Check your role first. Common examples:
 
-- your role cannot perform the action;
-- no workspace is selected;
-- required setup data is missing;
-- another operation is still loading;
-- the selected planning version has the wrong status for the action.
+- only an Owner can edit the company profile or manage workspace users;
+- only Owners and Admins can approve or reject planning;
+- **Operations** is available only to Owners and Admins;
+- an action can be unavailable for the current version or invoice status.
 
-Check [Roles and permissions](/concepts/roles-and-permissions), then refresh the workspace.
+Sign out and back in after a confirmed role change.
+
+## Counts or lists look outdated
+
+- Select **Refresh** on Home, Dashboard, History, or Operations when available.
+- Clear search and filters.
+- Check the selected page and pagination size.
+- Confirm that you are in the intended workspace.
+- Reload the browser page if a live connection did not recover.
 
 ## I cannot create a truck
 
-Open **Dashboard** and complete **Own company profile**. Trucks must be associated
-with the operating company, so **New truck** remains disabled until that profile exists.
-
-## I cannot create or publish planning
-
-Confirm that:
-
-- at least one client exists;
-- a client is selected in Planning;
-- a planning day is selected;
-- you are viewing a Draft before selecting **Soumettre**;
-- you are an Owner or Admin before selecting **Approuver** or **Rejeter**.
+An Owner must complete **Settings → Company → Own company profile**. Confirm the
+operating company, registration, and truck type in **Basics**.
 
 ## A driver cannot be assigned
 
-Open **Drivers** and review the driver's availability dates. Planning blocks an
-assignment when the trip date overlaps a recorded absence.
-
-Correct an incorrect absence, choose another driver, or create the trip with
-**Assigner plus tard**.
+Open Drivers and review current and future absences. Also confirm the driver belongs
+to the operating organization and the associated truck is not in Maintenance.
+Choose another driver or use **Assigner plus tard** when the absence is correct.
 
 ## A trip form will not save
 
-Check the required fields:
+Confirm:
 
 - trip day;
-- complete departure address;
-- complete arrival address.
+- complete departure and arrival addresses;
+- departure time when an arrival time is present;
+- different departure and arrival times for the same schedule;
+- valid numeric load, distance, duration, or price values;
+- a compatible driver and truck when assignment is required.
 
-If an arrival time is present, enter a departure time. Departure and arrival time
-cannot be identical for the same schedule.
+## I cannot submit, approve, reject, or restore
 
-## My changes are not active
+| Action | Required state | Required role |
+| --- | --- | --- |
+| **Soumettre** | Draft | User who can work with planning |
+| **Approuver** | Submitted | Owner or Admin |
+| **Rejeter** | Submitted | Owner or Admin |
+| **Restaurer** | Appropriate approved snapshot | Owner or Admin |
 
-Open **Actions** and check the selected planning version. Draft and Submitted versions
-are not published. An Owner or Admin must approve the version before it becomes active.
+Reconfirm the client, date, and version badge. Use Planning history to open the exact snapshot.
 
-Use **Planning history** to confirm the latest status.
+## My planning changes are not active
+
+Draft and Submitted versions are not published. An Owner or Admin must approve the
+version. Use Planning history to confirm the newest status and version number.
 
 ## A recurring trip did not appear
 
 1. Confirm the template is **Active**.
-2. Confirm the selected client matches the template.
-3. Check the recurrence days and start or end dates.
-4. Open Planning for a matching date; occurrences are created when the planning is loaded.
-5. Search the planning before creating another template or trip.
+2. Confirm the Planning client matches the template.
+3. Check frequency, allowed weekdays or monthly day, and date boundaries.
+4. Open Planning for a matching date to trigger generation.
+5. Clear filters and search before creating a duplicate.
 
-## Counts or lists look outdated
+## A client, driver, truck, or carrier cannot be deleted
 
-Return to **Home** and select **Refresh**. If the issue remains, reload the browser
-page and verify the selected workspace.
+The record may be referenced by planning, history, recurring trips, tariff grids,
+assignments, charters, tracking shares, or billing work. Prefer editing, pausing,
+deactivating, or marking unavailable when the record must remain for history.
 
-## A client, driver, or truck cannot be deleted
+## Operations is unavailable
 
-The record may still be referenced by planning, recurring trips, assignments, or
-history. Prefer editing or deactivating the operational record when possible.
+Confirm you are an Owner or Admin. If the page is visible but data does not update,
+check the live indicator and use refresh. Approved planning must exist before trips
+can appear in post-planning operations.
 
-<Warning>
-  Do not delete related planning just to remove a referenced resource. Preserve
-  operational history and ask a workspace Owner to review the relationship.
-</Warning>
+## A pre-invoice is blocked
+
+Open the dossier and read the blocker. Confirm the transport is delivered, a price
+exists, required proof is signed, and blocking incidents are resolved. See
+[Billing readiness](/concepts/billing-readiness).
+
+## A tracking link does not work
+
+- Copy the complete newest URL.
+- Check whether its state is Expired or Revoked.
+- Confirm the intended transport and client.
+- Create a replacement only when access is still appropriate.
+
+Never paste the secret URL into a public issue.
+
+## A route has no ETA
+
+The planned trip needs a date, departure time, and duration. Correct the Planning
+record and confirm any latest delay. Routes & ETA is planning-based, not GPS-based.
 
 ## Report a documentation problem
 
-If the product behavior differs from these guides, open a
-[documentation issue](https://github.com/Trucklab-io/documentation/issues/new) with:
+Open a [documentation issue](https://github.com/Trucklab-io/documentation/issues/new) with:
 
-- the page URL;
-- the step that no longer matches;
-- the visible UI label or error;
-- a screenshot with customer and personal data removed.
+- the documentation page URL;
+- the exact step that differs;
+- the visible UI label or safe error text;
+- your role and relevant version status;
+- a screenshot with customer, personal, financial, vehicle, and secret-link data removed.

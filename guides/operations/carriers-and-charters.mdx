@@ -1,0 +1,71 @@
+---
+title: "Manage carriers and charters"
+description: "Maintain transport partners, create subcontracting drafts, share one-time offers, and follow responses."
+icon: "people-carry-box"
+---
+
+Use **Transporteurs** for the partner directory and **Affrètement** to subcontract
+an approved transport to one of those partners.
+
+## Add a carrier
+
+1. Open **Operations → Transporteurs**.
+2. Select **Ajouter un transporteur**.
+3. Enter the required **Raison sociale**.
+4. Add the contact name, email, and phone number.
+5. Select **Ajouter**.
+
+Keep contact data current so an offer reaches the intended recipient.
+
+## Maintain carrier status
+
+- **Actif** carriers appear as available partners for new work.
+- **Inactif** carriers stay in the directory but should not receive new charters.
+- Use **Activer** or **Désactiver** for a reversible status change.
+- Delete only an unused carrier. Affretio protects carrier records already referenced by work.
+
+## Create an affrètement
+
+<Steps>
+  <Step title="Open Affrètement">
+    Select **Nouvel affrètement**.
+  </Step>
+  <Step title="Choose the transport">
+    Select the approved transport by date, route, and client.
+  </Step>
+  <Step title="Choose the partner">
+    Select an active carrier.
+  </Step>
+  <Step title="Enter the purchase price">
+    Enter **Prix d’achat (€)** and optional instructions.
+  </Step>
+  <Step title="Create the draft">
+    Select **Créer le brouillon** and review the resulting row.
+  </Step>
+  <Step title="Generate the offer link">
+    On a Draft, select **Générer le lien**. Copy the one-time secret immediately.
+  </Step>
+</Steps>
+
+## Charter statuses
+
+| Status | UI label | Meaning |
+| --- | --- | --- |
+| Draft | **Brouillon** | Prepared but no offer link sent. |
+| Offered or sent | **Envoyé** | Offer is available to the carrier. |
+| Accepted | **Accepté** | Carrier accepted the work. |
+| Rejected | **Refusé** | Carrier declined the work. |
+| Cancelled | **Annulé** | The charter was cancelled. |
+
+The public carrier page is available through the secret affrètement link. It lets
+the intended carrier review and respond without workspace access.
+
+<Warning>
+  The generated offer URL is displayed once and grants access to the charter response
+  page. Copy it immediately, send it only to the intended carrier, and never include it in screenshots.
+</Warning>
+
+## Cancel safely
+
+Use **Annuler** only after confirming the transport and carrier. Cancellation is
+not available after terminal states such as Accepted, Rejected, or Cancelled.
